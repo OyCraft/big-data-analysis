@@ -6,3 +6,4 @@ This is a test file. Edit this file to apply git features.
 Change 1
 Change 2
 Change 3
+Edit 1
