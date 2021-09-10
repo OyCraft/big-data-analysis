@@ -1,0 +1,8 @@
+git 分为工作区和版本库两个部分，其中版本库包含暂存区
+git status: 查看工作区和版本库情况
+git add <file>: 工作区->暂存区
+git commit -m "description": 暂存区->正式版本
+git restore --staged <file>: 暂存区->工作区
+git restore <file>: 回退工作区修改至上一个版本
+git log --pretty=oneline: 显示所有版本信息
+git reset --hard <HEAD>: 回退到特征值开头为HEAD的版本
