@@ -54,7 +54,7 @@ def genMatrix(nUser, nItem, sLim, sRound = True, sigma2 = 16, default = True):
         ibDist = input("请输入商品人气分布：")
     else:
         uaDist = [7, 3]
-        ubDist = [3, 3]
+        ubDist = [2, 4]
         iaDist = [7, 3]
         ibDist = [3, 3]
         
