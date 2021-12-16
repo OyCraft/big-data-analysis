@@ -48,10 +48,18 @@ def genMatrix(nUser, nItem, sLim, sRound = True, sigma2 = 16, default = True):
     
     #要求输入特征分布，或者使用默认值
     if default!=True:
-        uaDist = input("请输入顾客评分偏好分布：")
-        ubDist = input("请输入顾客购物频繁度分布：")
-        iaDist = input("请输入商品品质分布：")
-        ibDist = input("请输入商品人气分布：")
+        uaDist = [0, 0]
+        uaDist[0] = int(input("请输入顾客评分偏好分布均值："))
+        uaDist[1] = int(input("请输入顾客评分偏好分布方差："))
+        ubDist = [0, 0]
+        ubDist[0] = int(input("请输入顾客购物频繁度分布均值："))
+        ubDist[1] = int(input("请输入顾客购物频繁度分布方差："))
+        iaDist = [0, 0]
+        iaDist[0] = int(input("请输入商品品质分布均值："))
+        iaDist[1] = int(input("请输入商品品质分布方差："))
+        ibDist = [0, 0]
+        ibDist[0] = int(input("请输入商品人气分布均值："))
+        ibDist[1] = int(input("请输入商品人气分布方差："))
     else:
         uaDist = [7, 3]
         ubDist = [2, 4]
@@ -102,4 +110,4 @@ def genMatrix(nUser, nItem, sLim, sRound = True, sigma2 = 16, default = True):
     return score
 
 #示例矩阵
-mat = genMatrix(100, 100, [1, 10])
+mat = genMatrix(100, 100, [1, 5], default = True)
